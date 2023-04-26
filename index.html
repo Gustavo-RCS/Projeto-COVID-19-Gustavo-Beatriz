@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/icon" href="img/logo topo.png" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>Dados da COVID-19</title>
+</head>
+
+<body>
+    <header>
+        <h1>DADOS COVID-19</h1>
+        <nav>
+            <a href="index.html">HOME</a>
+            <a href="sobre.html">SOBRE</a>
+            <a href="equipe.html">EQUIPE</a>
+        </nav>
+    </header>
+    <button class="tablink" onclick="carregarInf();">Carregar Informação</button>
+    <div id="container">
+        <div id="div-erro">...</div>
+        <div id="mapa"></div>
+
+        <div id="pizza">
+
+        </div>
+        <div id="tabela">
+            <table id="tabela-dados">
+                <thead>
+                    <tr>
+                        <th>Estado</th>
+                        <th>Sigla</th>
+                        <th>Casos</th>
+                        <th>Mortes</th>
+                        <th class="sus">Suspeitos</th>
+                        <th class="sus">Descartado</th>
+                    </tr>
+                </thead>
+                <tbody id="linhas"></tbody>
+            </table>
+        </div>
+    </div>
+    <footer>SENAI - SP</footer>
+</body>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script src="js/script.js"></script>
+
+</html>
